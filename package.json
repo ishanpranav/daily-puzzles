@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ishanpranav/daily-puzzles#readme",
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "hbs": "^4.2.0"
   }
 }

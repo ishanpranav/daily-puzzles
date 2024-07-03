@@ -14,8 +14,11 @@ const publicDirectory = join(rootDirectory, 'public');
 express()
     .use(express.static(publicDirectory))
     .use(express.static(bootstrapDirectory))
+    .set('view engine', 'hbs')
     .get('/', (request, response) => {
-        response.json('{}');
+        response.locals.googleLink = process.env.GOOGLE_LINK;
+
+        response.render('home');
     })
     .listen(port, () => {
         console.log(`Server started on port ${port}`);
