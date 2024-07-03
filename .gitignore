@@ -1,3 +1,10 @@
+# .gitignore
+
+.vs/
+
+# https://github.com/github/gitignore
+# Licensed under the Creative Commons Zero v1.0 Universal license.
+
 # Logs
 logs
 *.log

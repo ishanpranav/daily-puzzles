@@ -1,0 +1,22 @@
+{
+  "name": "daily-puzzles",
+  "version": "1.0.0",
+  "description": "Daily Puzzles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishanpranav/daily-puzzles.git"
+  },
+  "author": "Ishan Pranav",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ishanpranav/daily-puzzles/issues"
+  },
+  "homepage": "https://github.com/ishanpranav/daily-puzzles#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
