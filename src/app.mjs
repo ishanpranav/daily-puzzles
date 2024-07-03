@@ -16,7 +16,7 @@ express()
     .use(express.static(bootstrapDirectory))
     .set('view engine', 'hbs')
     .get('/', (request, response) => {
-        response.locals.googleLink = process.env.GOOGLE_LINK;
+        response.locals.googleAdsenseAccount = process.env.GOOGLE_ADSENSE_ACCOUNT;
 
         response.render('home');
     })
