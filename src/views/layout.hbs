@@ -1,3 +1,7 @@
+{{!-- layout.hbs --}}
+{{!-- Copyright (c) 2024 Ishan Pranav --}}
+{{!-- Licensed under the MIT license. --}}
+
 <!DOCTYPE html>
 <html lang="en" class="h-100" data-bs-theme="auto">
 <head>
@@ -27,9 +31,8 @@
                     </a>
                 </h3>
                 <nav class="nav nav-masthead justify-content-center float-md-end">
-                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
-                    <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
+                    <a class="nav-link fw-bold py-1 px-0 {{todayStatus}}" aria-current="page" href="/">Today</a>
+                    <a class="nav-link fw-bold py-1 px-0 {{archiveStatus}}" href="/archive">Archive</a>
                 </nav>
             </div>
         </header>

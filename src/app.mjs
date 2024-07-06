@@ -17,8 +17,14 @@ express()
     .set('view engine', 'hbs')
     .get('/', (request, response) => {
         response.locals.googleAdsenseAccount = process.env.GOOGLE_ADSENSE_ACCOUNT;
+        response.locals.todayStatus = 'active';
 
         response.render('home');
+    })
+    .get('/archive', (request, response) => {
+        response.locals.archiveStatus = 'active';
+
+        response.render('archive');
     })
     .listen(port, () => {
         console.log(`Server started on port ${port}`);
